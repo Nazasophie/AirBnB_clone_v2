@@ -32,7 +32,7 @@ releases/web_static_{}/'.format(timestamp))
                     .format(timestamp, timestamp))
 
                 # remove archive
-                run('sudo rm /tmp/web_static_{}.tgz'.format(timestamp))
+                run('sudo rm -f /tmp/web_static_{}.tgz'.format(timestamp))
 
                 # move contents into host web_static
                 run('sudo mv /data/web_static/releases/web_static_{}/web_static/* \
